@@ -1,0 +1,80 @@
+site_name: Pandora's Box
+site_description: Setup, usage and best-practice guides for Pandora's Box.
+site_url: https://resfox.github.io/pandoras-box-guide/
+
+# Optional: keep these empty to hide the top-right repository link
+repo_name: ""
+repo_url: ""
+edit_uri: ""
+
+theme:
+  name: material
+  language: en
+  logo: assets/logopandora.gif
+  favicon: assets/logopandora.gif
+  font:
+    text: Inter
+    code: JetBrains Mono
+  palette:
+    scheme: slate
+    primary: black
+    accent: light blue
+  features:
+    # instant loading caches HTML/CSS oddly in the browser; disable for predictable updates
+    - navigation.path
+    - navigation.top
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+extra_css:
+  - stylesheets/clean-v4.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/2WsXhRknHQ
+      name: Discord
+    - icon: material/web
+      link: https://your-website.com
+      name: Website
+  generator: false
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: false
+      toc_depth: 3
+  - pymdownx.betterem
+  - pymdownx.mark
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: false
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+nav:
+  - Pandora's Box: index.md
+  - "BO7/WZ External": pages/bo7-wz.md
+  - "Valorant: Val Core": pages/valorant.md
+  - "Universal: Shodan AI Aimbot": pages/universal.md
+  - "Fortnite: Fnite Core": pages/fortnite.md
+  - "Rust: Rust Core": pages/rust.md
+  - "Apex: Apex Core": pages/apex.md
+  - "ARC Raiders: ARC Core": pages/arc-raiders.md
+  - "Marvel Rivals: Marvel Core": pages/marvel-rivals.md
+  - "CS2: CS2 Core": pages/cs2.md
+  - Guides:
+      - "Controller PC Guide": pages/controller-guide.md
+      - "PC Environment": pages/pc-environment.md
+
+copyright: ""
