@@ -1,4 +1,5 @@
 name: Deploy Pandora's Box docs
+# Triggered update to force a fresh Pages deploy.
 
 on:
   push:
